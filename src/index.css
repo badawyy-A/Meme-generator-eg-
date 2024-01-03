@@ -189,19 +189,13 @@ nav h1{
   bottom: 6%;
 }
 @media (max-width: 528px){
+  body{
+    height: fit-content;
+  }
   body::after{
     content: '';
-    width: 400px;
-    height:350px;
-    position: absolute;
-    top: 75%;
-    right: -50%;
-    background-image: url('imgs/Trollface_non-free.png');
-    background-position: center;
-    background-size: cover;
-    transform: rotate(-15deg);
-    z-index: 0;
-    filter: brightness(40%);
+    width: 0;
+    height: 0;
   }
   nav{
     justify-content: center;
