@@ -1,0 +1,244 @@
+/** global rules **/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Karla', sans-serif;
+  height: fit-content;
+  position: relative;
+  height: 900px;
+  overflow-x: hidden;
+}
+body::before{
+  content: '';
+  width: 100%;
+  height: 160%;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  background-color: #222222;
+  
+}
+body::after{
+  content: '';
+  width: 53%;
+  height: 65%;
+  position: absolute;
+  top: 65%;
+  right: -30%;
+  background-image: url('imgs/Trollface_non-free.png');
+  background-position: center;
+  background-size: cover;
+  transform: rotate(-15deg);
+  z-index: 0;
+  filter: brightness(40%);
+  
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  box-shadow:  0px 2.9825618267059326px 7.456404209136963px 0px #0000001A;
+  background: linear-gradient(to right, #000000, #161616);
+  z-index: 1;
+}
+
+
+
+nav img{
+  width: 50px;
+  margin-right: 20px;
+}
+
+nav h1{
+  color: #FFFFFF;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.app{
+  background: #FFFFFF;
+
+}
+.container{
+  position: relative;
+  height: 100%;
+  margin-top: 100px;
+  z-index: 2;
+}
+
+.container .img-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container img{
+  width: 50%;
+  margin-top: 30px;
+  border-radius: 4px;
+  
+}
+.container .form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .form .labels{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+.container .form label{
+  display: block;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+.container .form input{
+  width: 222px;
+  height: 34px;
+  border-radius: 6px;
+  background-color: #222222;
+  outline: solid 1px #767679;
+  color: #FFFFFF;
+  border: none;
+  padding-left: 20px;
+  
+  
+}
+.container .form input::placeholder{
+  padding-left: 20px;
+
+}
+.container .form input:hover{
+  outline: solid 1px #ffffff;
+}
+
+.container .form button{
+  width: 70%;
+  height: 40px;
+  background:  #474747;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+
+.img-section{
+  position: relative;
+  height: fit-content;
+}
+.img-section p{
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  -webkit-text-stroke: 2.5px black;
+  width: 50%;
+  font-weight: 700;
+  text-align: center;
+  word-wrap: break-word;
+  font-family: 'Rubik', sans-serif;
+}
+  
+
+.top{
+  top: 6%;
+}
+.bottom{
+  bottom: 6%;
+}
+@media (max-width: 528px){
+  body::after{
+    content: '';
+    width: 400px;
+    height:350px;
+    position: absolute;
+    top: 75%;
+    right: -50%;
+    background-image: url('imgs/Trollface_non-free.png');
+    background-position: center;
+    background-size: cover;
+    transform: rotate(-15deg);
+    z-index: 0;
+    filter: brightness(40%);
+  }
+  nav{
+    justify-content: center;
+  }
+  .container{
+    margin-top: 70px;
+  }
+  .container .form .labels{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .container .form input {
+    margin-bottom: 20px;
+  }
+  .container img{
+    width: 90%;
+    max-height: 50%;
+    margin-top: 60px;
+    border-radius: 6px;
+    
+  }
+  .top{
+    top: 25%;
+  }
+  .img-section p{
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    -webkit-text-stroke: 2px black;
+    width: 50%;
+    font-weight: 700;
+    text-align: center;
+    word-wrap: break-word;
+    font-family: 'Rubik', sans-serif;
+  }
+}
